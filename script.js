@@ -10,5 +10,5 @@ let kickDrum = scribble.clip({
   pattern: 'x---'.repeat(4)
 });
 
-scribble.midi(kickDrum, 'kick_drum.mid');
-scribble.midi(pianoPattern, 'piano_pattern.mid');
+scribble.midi(kickDrum, './midi/kick_drum.mid');
+scribble.midi(pianoPattern, './midi/piano_pattern.mid');
