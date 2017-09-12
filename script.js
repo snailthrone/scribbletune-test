@@ -1,9 +1,14 @@
 const scribble = require('scribbletune');
 
-let clip = scribble.clip({
-  notes: ['c3', 'd3', 'e3', 'f3', 'g3', 'g3', 'g3', 'g3', 'f3', 'e3', 'd3', 'c3', 'c3', 'c3'],
-  pattern: 'x__-x__-x__-x__-x__-x__-x____--'.repeat(2)
-  noteLength: '1/4'
+let pianoPattern = scribble.clip({
+  notes: ['c3', 'd3', 'e3', 'f3'],
+  pattern: 'x'.repeat(16),
 });
 
-scribble.midi(clip, 'satu_meni_saunaan');
+let kickDrum = scribble.clip({
+  notes: ['c2'],
+  pattern: 'x---'.repeat(4)
+});
+
+scribble.midi(kickDrum, 'kick_drum.mid');
+scribble.midi(pianoPattern, 'piano_pattern.mid');
