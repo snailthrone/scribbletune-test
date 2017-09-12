@@ -2,7 +2,7 @@ const scribble = require('scribbletune');
 
 let pianoPattern = scribble.clip({
   notes: ['c3', 'd3', 'e3', 'f3'],
-  pattern: 'x'.repeat(16),
+  pattern: 'x'.repeat(16)
 });
 
 let kickDrum = scribble.clip({
