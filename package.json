@@ -1,0 +1,18 @@
+{
+  "name": "scribbletune-demo",
+  "version": "1.0.0",
+  "description": "trying to compose music with scribbletune",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scribbletune",
+    "music"
+  ],
+  "author": "Eemeli Martti",
+  "license": "ISC",
+  "dependencies": {
+    "scribbletune": "^0.11.0"
+  }
+}
